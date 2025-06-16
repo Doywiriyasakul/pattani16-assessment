@@ -613,14 +613,14 @@
         // ส่งข้อมูลไป Google Sheets
         async function sendToGoogleSheets(data) {
             // *** ตั้งค่า URL ของ Google Apps Script Web App ที่นี่ ***
-            const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyUbAQeWA_HyY8lGMhhLAVk5Gc7bJ7VVRfDOk-GNgh2OcyTiQR_sMtzsZm1VABrYHxY3A/exec';
+            const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbytVslJ8VEfP_mTS5STe8Xjq2rdSdVrUo7R9rPJ0jB4D5bp8sSdh3QUFAEVVmmZnRGftw/exec';
             
-            if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyUbAQeWA_HyY8lGMhhLAVk5Gc7bJ7VVRfDOk-GNgh2OcyTiQR_sMtzsZm1VABrYHxY3A/exec') {
+            if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbytVslJ8VEfP_mTS5STe8Xjq2rdSdVrUo7R9rPJ0jB4D5bp8sSdh3QUFAEVVmmZnRGftw/exec') {
                 console.log('Google Sheets URL not configured');
                 return;
             }
 
-            const response = await fetch('https://script.google.com/macros/s/AKfycbyUbAQeWA_HyY8lGMhhLAVk5Gc7bJ7VVRfDOk-GNgh2OcyTiQR_sMtzsZm1VABrYHxY3A/exec', {
+            const response = await fetch('', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
